@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO 핵심 태그 -->
+    <title>중국동포 산재·임금체불 전문 | 판사출신 변호사 무료상담</title>
+    <meta name="description" 
+          content="F-4·H-2 비자 중국동포 산재, 임금체불, 비자문제 전문. 
+                   판사출신 20년 경력 변호사. 착수금 0원. 위챗상담 가능.">
+    <meta name="keywords" 
+          content="중국동포 산재, H-2비자 산재, 
+                   조선족 임금체불, 외국인 산재 변호사">
+    
+    <style>
+        /* 기본 설정 */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Noto Sans KR', sans-serif; color: #333; }
+        
+        /* 상단 고정 신뢰 바 */
+        .trust-bar {
+            background: #1a3a5c;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 13px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        /* 히어로 섹션 */
+        .hero {
+            background: linear-gradient(135deg, #1a3a5c 0%, #2d6a9f 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 32px;
+            line-height: 1.5;
+            margin-bottom: 15px;
+            font-weight: 900;
+        }
+        .hero h2 {
+            font-size: 18px;
+            color: #aed6f1;
+            margin-bottom: 30px;
+            font-weight: 400;
+        }
+        
+        /* CTA 버튼 */
+        .btn-primary {
+            background: #e74c3c;
+            color: white;
+            padding: 18px 40px;
+            border: none;
+            border-radius: 50px;
+            font-size: 20px;
+            font-weight: 700;
+            cursor: pointer;
+            display: inline-block;
+            text-decoration: none;
+            margin: 10px;
+            box-shadow: 0 4px 15px rgba(231,76,60,0.4);
+        }
+        .btn-wechat {
+            background: #07C160;
+            color: white;
+            padding: 18px 40px;
+            border: none;
+            border-radius: 50px;
+            font-size: 20px;
+            font-weight: 700;
+            cursor: pointer;
+            display: inline-block;
+            text-decoration: none;
+            margin: 10px;
+        }
+        
+        /* 섹션 공통 */
+        .section { padding: 60px 20px; max-width: 800px; margin: 0 auto; }
+        .section-title {
+            font-size: 26px;
+            font-weight: 900;
+            text-align: center;
+            margin-bottom: 40px;
+            color: #1a3a5c;
+        }
+        
+        /* 체크리스트 */
+        .checklist { list-style: none; }
+        .checklist li {
+            padding: 15px 20px;
+            margin: 10px 0;
+            background: #f8f9fa;
+            border-left: 4px solid #e74c3c;
+            border-radius: 5px;
+            font-size: 17px;
+        }
+        
+        /* 비교표 */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th {
+            background: #1a3a5c;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        td {
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+        }
+        .highlight { color: #e74c3c; font-weight: 900; font-size: 20px; }
+        
+        /* 서비스 카드 */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .card {
+            background: white;
+            border: 2px solid #e8e8e8;
+            border-radius: 15px;
+            padding: 30px 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            color: #333;
+            display: block;
+        }
+        .card:hover {
+            border-color: #2d6a9f;
+            box-shadow: 0 5px 20px rgba(45,106,159,0.2);
+            transform: translateY(-3px);
+        }
+        .card-icon { font-size: 40px; margin-bottom: 15px; }
+        .card-title { font-size: 18px; font-weight: 700; margin-bottom: 10px; }
+        .card-desc { font-size: 14px; color: #666; }
+        
+        /* FAQ */
+        .faq-item {
+            border: 1px solid #e8e8e8;
+            border-radius: 10px;
+            margin: 15px 0;
+            overflow: hidden;
+        }
+        .faq-q {
+            background: #f8f9fa;
+            padding: 20px;
+            font-weight: 700;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .faq-a {
+            padding: 20px;
+            font-size: 15px;
+            line-height: 1.8;
+            color: #555;
+            border-top: 1px solid #e8e8e8;
+        }
+        
+        /* 폼 섹션 */
+        .form-section {
+            background: #1a3a5c;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .form-wrapper {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            color: #333;
+        }
+        
+        /* 하단 */
+        footer {
+            background: #111;
+            color: #aaa;
+            text-align: center;
+            padding: 30px;
+            font-size: 13px;
+            line-height: 2;
+        }
+        
+        /* 모바일 최적화 */
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 24px; }
+            .btn-primary, .btn-wechat { 
+                display: block; 
+                margin: 10px auto; 
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- 상단 신뢰 바 -->
+<div class="trust-bar">
+    ✅ 판사출신 20년 &nbsp;|&nbsp; 
+    ✅ 중국어 직접상담 &nbsp;|&nbsp; 
+    ✅ 착수금 0원 &nbsp;|&nbsp; 
+    ✅ 비자걱정 NO &nbsp;|&nbsp;
+    ✅ F-4·H-2 전문
+</div>
+
+<!-- 히어로 섹션 -->
+<section class="hero">
+    <h1>다친 것도 억울한데<br>보상도 못 받으셨습니까?</h1>
+    <h2>受伤已经很委屈，还得不到应有的赔偿吗？</h2>
+    <p style="font-size:18px; margin-bottom:30px; color:#aed6f1;">
+        판사 출신 20년 경력 변호사가 직접 지켜드립니다<br>
+        前法官执业20年，直接保护您的法律权益
+    </p>
+    <a href="tel:010-0000-0000" class="btn-primary">
+        📞 무료 전화 상담
+    </a>
+    <a href="https://wechat.com" class="btn-wechat">
+        💬 위챗 상담하기
+    </a>
+</section>
+
+<!-- 공감 체크리스트 -->
+<section class="section">
+    <h2 class="section-title">
+        혹시 지금 이런 상황이십니까?<br>
+        <span style="font-size:18px; color:#666;">
+            您现在是这种情况吗？
+        </span>
+    </h2>
+    <ul class="checklist">
+        <li>☑ 일하다 다쳤는데 사장이 "그냥 합의하자"고 합니다</li>
+        <li>☑ "비자 취소된다"는 말에 신고를 못 하고 있습니다</li>
+        <li>☑ 치료비만 받고 끝낸 것 같아 억울합니다</li>
+        <li>☑ 팀장(오야지)이 임금을 떼먹고 사라졌습니다</li>
+        <li>☑ 퇴직금을 못 받고 해고당했습니다</li>
+        <li>☑ 한국어가 서툴러 혼자 대응하기 무섭습니다</li>
+    </ul>
+    <div style="text-align:center; margin-top:30px;">
+        <a href="#form" class="btn-primary">
+            하나라도 해당되면 → 무료 상담
+        </a>
+    </div>
+</section>
+
+<!-- 5대 서비스 카드 -->
+<section style="background:#f8f9fa; padding:60px 20px;">
+    <div style="max-width:800px; margin:0 auto;">
+        <h2 class="section-title">전문 서비스 / 专业服务</h2>
+        <div class="card-grid">
+            <a href="#sanjae" class="card">
+                <div class="card-icon">🦺</div>
+                <div class="card-title">산재·민사 보상</div>
+                <div class="card-desc">공상 합의 전 반드시 보세요</div>
+            </a>
+            <a href="#visa" class="card">
+                <div class="card-icon">🛂</div>
+                <div class="card-title">비자·체류 자격</div>
+                <div class="card-desc">비자 걱정 없이 치료받으세요</div>
+            </a>
+            <a href="#wage" class="card">
+                <div class="card-icon">💰</div>
+                <div class="card-title">임금체불·퇴직금</div>
+                <div class="card-desc">도망간 사장 대신 국가가 줍니다</div>
+            </a>
+            <a href="#medical" class="card">
+                <div class="card-icon">🏥</div>
+                <div class="card-title">의료비 지원</div>
+                <div class="card-desc">수천만 원 병원비 줄이는 법</div>
+            </a>
+            <a href="#children" class="card">
+                <div class="card-icon">🎓</div>
+                <div class="card-title">자녀 교육·진로</div>
+                <div class="card-desc">다문화 특별전형 완벽 가이드</div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- 보상금 비교표 -->
+<section class="section" id="sanjae">
+    <h2 class="section-title">
+        혼자 처리 vs 변호사 선임 후<br>
+        <span style="font-size:16px; color:#666;">
+            실제 수령 금액 비교
+        </span>
+    </h2>
+    <table>
+        <tr>
+            <th>사고 유형</th>
+            <th>혼자 처리 시</th>
+            <th>변호사 선임 후</th>
+            <th>차액</th>
+        </tr>
+        <tr>
+            <td>손가락 절단</td>
+            <td>300만 원</td>
+            <td>3,800만 원</td>
+            <td class="highlight">+3,500만 원</td>
+        </tr>
+        <tr>
+            <td>건설 추락 골절</td>
+            <td>500만 원</td>
+            <td>2,400만 원</td>
+            <td class="highlight">+1,900만 원</td>
+        </tr>
+        <tr>
+            <td>허리 디스크</td>
+            <td>200만 원</td>
+            <td>1,200만 원</td>
+            <td class="highlight">+1,000만 원</td>
+        </tr>
+        <tr>
+            <td>뇌심혈관·과로</td>
+            <td>0원</td>
+            <td>8,000만 원~</td>
+            <td class="highlight">+8,000만 원~</td>
+        </tr>
+    </table>
+    <p style="text-align:center; color:#666; font-size:14px; margin-top:10px;">
+        ※ 위 금액은 실제 사례 기반 참고치이며, 
+        개별 사건에 따라 다를 수 있습니다.
+    </p>
+</section>
+
+<!-- 비자 공포 해소 -->
+<section style="background:#fff3cd; padding:60px 20px;">
+    <div style="max-width:800px; margin:0 auto; text-align:center;">
+        <h2 style="font-size:26px; font-weight:900; 
+                   color:#1a3a5c; margin-bottom:20px;">
+            "신고하면 강제 출국 아닌가요?"<br>
+            <span style="font-size:18px;">
+                "举报的话会被强制出境吗？"
+            </span>
+        </h2>
+        <div style="background:white; border-radius:15px; 
+                    padding:30px; text-align:left;">
+            <p style="font-size:18px; font-weight:700; 
+                      color:#e74c3c; margin-bottom:15px;">
+                ❌ 그것은 사장이 만들어낸 거짓말입니다.
+            </p>
+            <p style="font-size:16px; line-height:2;">
+                대법원 판례에 따르면 <strong>H-2 허용 외 업종 근무 중 
+                사고, 미등록 상태의 사고 모두 산재보험 100% 적용</strong>됩니다. 
+                산재 처리 기간 중 체류 연장이 가능하며, 
+                오히려 신고하지 않는 것이 손해입니다.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section class="section">
+    <h2 class="section-title">자주 묻는 질문 / 常见问题</h2>
+    
+    <div class="faq-item">
+        <div class="faq-q">
+            Q. 이미 공상 합의를 했는데 늦지 않았나요?
+        </div>
+        <div class="faq-a">
+            합의 내용과 시기에 따라 추가 청구가 가능한 경우가 
+            많습니다. 합의서를 위챗으로 보내주시면 무료로 
+            검토해 드립니다. 소멸시효 3년 이내라면 반드시 
+            확인하십시오.
+        </div>
+    </div>
+    
+    <div class="faq-item">
+        <div class="faq-q">
+            Q. 불법체류 상태인데 신고 가능한가요?
+        </div>
+        <div class="faq-a">
+            가능합니다. 산재보험은 체류 자격과 무관하게 
+            적용됩니다. 신고 자체가 단속 사유가 되지 않으며, 
+            치료 기간 중 체류 보호를 위한 법률 조치를 
+            병행해 드립니다.
+        </div>
+    </div>
+    
+    <div class="faq-item">
+        <div class="faq-q">
+            Q. 선임 비용이 걱정됩니다.
+        </div>
+        <div class="faq-a">
+            착수금 없는 완전 성공보수제입니다. 
+            보상금을 받기 전까지 단 한 푼도 받지 않습니다. 
+            받아낸 금액의 일정 비율만 수수료로 받습니다.
+        </div>
+    </div>
+    
+    <div class="faq-item">
+        <div class="faq-q">
+            Q. 사고 후 시간이 많이 지났는데 가능한가요?
+        </div>
+        <div class="faq-a">
+            산재보험 청구 소멸시효는 3년입니다. 
+            사고 후 3년 이내라면 지금 바로 연락주십시오. 
+            시간이 지날수록 불리해지므로 오늘 바로 
+            확인하시기 바랍니다.
+        </div>
+    </div>
+</section>
+
+<!-- 상담 신청 폼 -->
+<section class="form-section" id="form">
+    <h2 style="font-size:28px; font-weight:900; margin-bottom:10px;">
+        지금 바로 무료 상담 신청
+    </h2>
+    <p style="color:#aed6f1; margin-bottom:30px;">
+        24시간 이내 직접 연락드립니다
+    </p>
+    <div class="form-wrapper">
+        <!-- 여기에 Google Forms 임베드 코드 붙여넣기 -->
+        <iframe 
+            src="여기에_구글폼_주소_붙여넣기" 
+            width="100%" 
+            height="600" 
+            frameborder="0" 
+            marginheight="0" 
+            marginwidth="0">
+            로딩 중...
+        </iframe>
+    </div>
+</section>
+
+<!-- 하단 푸터 -->
+<footer>
+    <p><strong>법무법인 ○○ | 변호사 ○○○</strong></p>
+    <p>서울특별시 ○○구 ○○로 ○○ | 대표전화: 010-0000-0000</p>
+    <p>사업자등록번호: 000-00-00000</p>
+    <p style="margin-top:15px; font-size:12px;">
+        본 사이트의 내용은 법률 정보 제공을 목적으로 하며, 
+        개별 사건에 대한 법률 조언을 대체하지 않습니다.<br>
+        변호사법 및 변호사 윤리규약을 준수합니다.
+    </p>
+</footer>
+
+</body>
+</html>
